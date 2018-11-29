@@ -10,6 +10,21 @@ namespace HexColors
     {
         static void Main(string[] args)
         {
+            var input = Console.ReadLine();
+            if (IsValidInput(input))
+            {
+                var inputColor = RgbColor.FromString(input);
+                var hexColor = HexColor.FromRgbColor(inputColor);
+            }
+            else
+            {
+                Console.WriteLine("Input not valid.");
+            }
+        }
+
+        private static bool IsValidInput(string input)
+        {
+            throw new NotImplementedException();
         }
     }
 }
