@@ -10,21 +10,30 @@ namespace HexColors
     {
         static void Main(string[] args)
         {
-            var input = Console.ReadLine();
-            if (IsValidInput(input))
+            var input = Console.ReadLine(); ;
+            do
             {
-                var inputColor = RgbColor.FromString(input);
-                var hexColor = HexColor.FromRgbColor(inputColor);
-            }
-            else
-            {
-                Console.WriteLine("Input not valid.");
-            }
+                ProcessInput(input);
+                input = Console.ReadLine();
+            } while (input != "exit");
         }
 
-        private static bool IsValidInput(string input)
+        private static void ProcessInput(string input)
         {
-            throw new NotImplementedException();
+            RgbColor inputColor;
+            try
+            {
+                inputColor = RgbColor.FromString(input);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e);
+                Console.WriteLine("Input not valid.");
+                return;
+            }
+
+            var hexColor = HexColor.FromRgbColor(inputColor);
+            Console.WriteLine(hexColor.ToString());
         }
     }
 }
