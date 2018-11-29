@@ -4,15 +4,9 @@ namespace HexColors
 {
     public class HexColorConverter
     {
-        public string FromRGB(int red, int green, int blue)
+        public string FromRgb(RgbColor rgb)
         {
-            if (red < 0 || red > 255)
-                throw new ArgumentOutOfRangeException($"Red value {red} not within 0 to 255.");
-            if (green < 0 || green > 255)
-                throw new ArgumentOutOfRangeException($"Red value {green} not within 0 to 255.");
-            if (blue < 0 || blue > 255)
-                throw new ArgumentOutOfRangeException($"Red value {blue} not within 0 to 255.");
-            return FormatHexString(ToHex(red), ToHex(green), ToHex(blue));
+            return FormatHexString(ToHex(rgb.RedValue), ToHex(rgb.GreenValue), ToHex(rgb.BlueValue));
         }
 
         private string ToHex(int decimalValue)
