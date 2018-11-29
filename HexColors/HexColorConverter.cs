@@ -17,7 +17,7 @@ namespace HexColors
 
         private string ToHex(int decimalValue)
         {
-            return null;
+            return decimalValue.ToString("X");
         }
 
         private string FormatHexString(string redHex, string greenHex, string blueHex)
