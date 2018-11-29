@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexColors", "HexColors\HexColors.csproj", "{105A17BA-B397-4D27-B9B6-503EB5FC06BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexColorsTests", "HexColorsTests\HexColorsTests.csproj", "{F47DF569-C678-4BB0-937D-944A9B7F9733}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{105A17BA-B397-4D27-B9B6-503EB5FC06BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105A17BA-B397-4D27-B9B6-503EB5FC06BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105A17BA-B397-4D27-B9B6-503EB5FC06BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47DF569-C678-4BB0-937D-944A9B7F9733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47DF569-C678-4BB0-937D-944A9B7F9733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47DF569-C678-4BB0-937D-944A9B7F9733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47DF569-C678-4BB0-937D-944A9B7F9733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
